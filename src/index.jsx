@@ -7,8 +7,10 @@ import logger from 'redux-logger';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { createHistory as history } from 'history';
 
+import CarsIndex from './containers/cars_index';
 import '../assets/stylesheets/application.scss';
-import carsReducer from '.reducers/cars_reducer';
+
+import carsReducer from './reducers/cars_reducer';
 
 const garageName = prompt("What is your garage?") || `garage${Math.floor(10 + (Math.random() * 90))}`;
 const initialState = {
