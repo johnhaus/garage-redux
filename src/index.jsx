@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { createHistory as history } from 'history';
 
 import '../assets/stylesheets/application.scss';
+import carsReducer from '.reducers/cars_reducer';
 
 const garageName = prompt("What is your garage?") || `garage${Math.floor(10 + (Math.random() * 90))}`;
 const initialState = {
@@ -28,7 +29,7 @@ ReactDOM.render(
   <Provider store={createStore(reducers, {}, middlewares)}>
     <Router history={history}>
       <Switch>
-        TODO
+        <Route path='/' exact component={CarsIndex} />
       </Switch>
     </Router>
   </Provider>,
