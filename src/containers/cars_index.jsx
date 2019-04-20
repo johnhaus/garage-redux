@@ -17,7 +17,7 @@ class CarsIndex extends Component {
         // <Aside key='aside' garage={this.props.garage}>
           // <Link to='/cars/new'>Add a car</Link>
         // </Aside>,
-        <div className="no-car" key='nocar'>No car yet</div>
+        <div className="no-car" key='nocar'>No cars yet</div>
       ];
     }
     return [
